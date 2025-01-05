@@ -441,7 +441,7 @@ html,body{
     
 }
 
-@media (max-width: 500px){
+@media (max-width: 800px){
     #home #nav, #page2 #nav{
         z-index: 999999;
         padding: 30px;
@@ -450,11 +450,11 @@ html,body{
         padding: 30px;
     }
     #nav h1{
-        font-size: 3vw;
+        font-size: 6vw;
     }
     #nav img{
-        width: 10vw;
-        height: 10vw;
+        width: 20vw;
+        height: 20vw;
     }
 
     #nav-w h1{
@@ -528,13 +528,13 @@ html,body{
     }
 
     #pinkball{
-        width: 2vw;
-        height: 2vw;
+        width: 4vw;
+        height: 4vw;
     }
 
     #home #circle {
-        width: 120vw;
-        height: 120vw;
+        width: 180vw;
+        height: 180vw;
     }
 
     #btm img:nth-child(1){
@@ -551,8 +551,8 @@ html,body{
     }
 
     #home #smcircle{
-        width: 75vw;
-        height: 75vw;
+        width: 100vw;
+        height: 100vw;
     }
 
     #nav-w-btm{
@@ -560,7 +560,7 @@ html,body{
     }
 
     #sbtm>h1{
-        font-size: 5vw;
+        font-size: 6vw;
         width: 90vw;
         padding-bottom: 7vh;
     }
