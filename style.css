@@ -2,7 +2,10 @@
     font-family: nexus;
     src: url(./Assets/Fonts/Neue\ hass.ttf);
 }
-
+@font-face {
+    font-family: DS Digital;
+    src: url(./Assets/Fonts/D-S\ digital.ttf);
+}
 *{
     padding: 0;
     margin: 0;
@@ -18,7 +21,9 @@ html,body{
 #main{
     width: 100vw;
 }
-
+#body::-webkit-scrollbar{
+    display: none;
+}
 #home{
     position: relative;
     width: 100%;
@@ -41,7 +46,7 @@ html,body{
     left: 0;
 }
 
-#overlay>h1{
+#overlay>h1#gl{
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
@@ -51,19 +56,33 @@ html,body{
     position: absolute;
     z-index: 1000;
 }
-#pinkball{
-    height: 10vw;
-    width: 10vw;
+
+#overlay>h1#pf{
+    bottom: -50%;
+    left: 53.5%;
+    transform: translate(-50%, 0%) rotate(30deg);
+    font-weight: 400;
+    font-size: 12vw;
+    width: 80vw;
+    color : #fff;
     position: absolute;
-    bottom: -20%;
-    left: 45%;
+    z-index: 1000;
+    transform-origin: 0% 50%;
+}
+
+#pinkball{
+    height: 1vw;
+    width: 1vw;
+    position: absolute;
+    top: 150%;
+    left: 50%;
     transform: translate(-50%, -50%);
     background-color: #D5A7B4;
     border-radius: 50%;
     z-index: 1000;
-    scale: 0.01;
+    scale: 1;
 }
-#nav{
+#home #nav, #page2 #nav{
     text-transform: uppercase;
     z-index: 999;
     width: 100%;
@@ -84,13 +103,38 @@ html,body{
     height: 6vh;
 }
 
+#home #nav-w, #page #nav-w{
+    text-transform: uppercase;
+    z-index: 999;
+    width: 100%;
+    height: 8vw;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 2vh 4vh;
+    align-items: center;
+    opacity: 0;
+    background-color: transparent;
+}
+
+#nav-w>h1{
+    font-size: 1.4vw;
+    font-family: nexus;
+    color: white;
+}
+#nav-w>img{
+    width: 6vw;
+    height: 4vh;
+    
+}
+
 #centerimg{
     padding: 2vw;
-    height: 10vw;
+    height: 30vw;
     width: 30vw;
     position: absolute;
     z-index: 1000;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -119,7 +163,7 @@ html,body{
     object-fit: cover;
 }
 
-#btm-nav{
+#home #btm-nav, #page2 #btm-nav{
     z-index: 999;
     width: 100%;
     height: 8vw;
@@ -135,7 +179,23 @@ html,body{
     width: 6vw;
     height: 6vh;
 }
+#home #btm-nav-w{
+    z-index: 999;
+    width: 100%;
+    height: 8vw;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 2vh 4vh;
+    align-items: center;
+    bottom: 0;
+}
 
+#btm-nav-w img{
+    opacity: 0;
+    width: 6vw;
+    height: 6vh;
+}
 #smcircle{
     height: 37vw;
     width: 37vw;
@@ -201,4 +261,182 @@ html,body{
 }
 #btm img:nth-child(4){
     transform: translate(-50%, -50%) scale(1);
+}
+
+#pinkbox{
+    position: relative;
+    height: 30vw;
+    width: 30vw;
+    background-color: #D5A7B4;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 150%;
+}
+
+#pinkbox #mid{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+#pinkbox #mid>h5{
+    font-weight: 400;
+    font-size: .8vw;
+    padding-bottom: .8vw;
+}
+#pinkbox #mid>h6{
+    font-weight: 400;
+    font-size: .8vw;
+    padding-left: 2vw;
+}
+
+#pinkbox #mid>h6:nth-child(4){
+    padding-top: .8vw;
+}
+
+#btmbox{
+    height: 5vw;
+    width: 100%;
+    display: flex;
+    bottom: 10%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+#btm1>h5{
+    font-size: 2.3vw;
+    font-family: DS Digital;
+    letter-spacing: .1vw;
+    font-weight: 400;
+    padding-left: 1.6vw;
+}
+
+#btm2>h5{
+    font-size: 2.3vw;
+    font-family: DS Digital;
+    letter-spacing: .1vw;
+    font-weight: 400;
+    padding-left: 1.6vw;
+}
+
+#btm1>h6{
+    font-weight: 400;
+}
+
+#btm2>h6{
+    font-weight: 400;
+}
+
+/* second page starts here*/
+
+#page2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#stop{
+    overflow: hidden;
+    position: relative;
+    height: 70%;
+    width: 100%;
+    background-color: white;
+}
+
+#sbtm{
+    position: relative;
+    height: 30%;
+    width: 100%;
+    border-top: 2px solid rgba(0, 0, 0, .2);
+    border-bottom: 2px solid rgba(0, 0, 0, .2);
+}
+
+.circle{
+    height: 18vw;
+    width: 18vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#stop .purple{
+    background-color: #B4AAD5;
+    left: 45%;
+}
+#stop .pink{
+    background: linear-gradient(to right, #D5A7B4, #D5A7B4);
+    left: 55%;
+}
+
+#stop>h1{
+    font-size: 27vw;
+    text-transform: uppercase;
+    font-weight: 00;
+    position: absolute;
+    bottom: 0%;
+    line-height: 1;
+    left: 100%;
+    color: #fff;
+    z-index: 99999;
+}
+
+#sbtm>h1{
+    font-size: 3.6vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+    color: #2C2C2C;
+    width: 60%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#sbtm>h2{
+    font-size: 3.2vw;
+    font-weight: 100;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 5%;
+}
+
+#sbtm>h1:nth-child(4){
+    opacity: 0;
+}
+#sbtm>h2:nth-child(2){
+    opacity: 0;
+}
+
+#nav-w-btm{
+    background-color: red;
+    display: flex;
+    text-transform: uppercase;
+    z-index: 999;
+    width: 100%;
+    height: 8vw;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 2vh 4vh;
+    align-items: center;    
+    background-color: transparent;
+    opacity: 0;
+}
+
+#nav-w-btm>h1{
+    font-size: 1.4vw;
+    font-family: nexus;
+    color: white;
+}
+#nav-w-btm>img{
+    width: 6vw;
+    height: 4vh;
+    
 }
