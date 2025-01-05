@@ -142,14 +142,9 @@ function timelineTwo(){
         ease : Power1,
     })
     tl2.to("#stop .pink",{
-        scale: 10,
+        scale: 12,
         left: "50%",
         duration:1,
-        ease : Power1,
-    },"pink")
-    tl2.to("#page2 #nav",{
-        opacity:0,
-        duration:.4,
         ease : Power1,
     },"pink")
     tl2.to("#page2 #nav-w-btm",{

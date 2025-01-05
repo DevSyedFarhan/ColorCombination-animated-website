@@ -440,3 +440,129 @@ html,body{
     height: 4vh;
     
 }
+
+@media (max-width: 500px){
+    #home #nav, #page2 #nav{
+        z-index: 999999;
+        padding: 30px;
+    }
+    #home #nav-w{
+        padding: 30px;
+    }
+    #nav h1{
+        font-size: 3vw;
+    }
+    #nav img{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    #nav-w h1{
+        font-size: 3vw;
+    }
+    #nav-w img{
+        width: 15vw;
+        height: 7vw;
+    }
+
+    #centerimg{
+        width: 80vw;
+    }
+    #centerimg h4{
+        font-size: 3vw;
+    }
+    #cimg img{
+        height: 70%;
+        width: 100%;
+    }
+
+    #home #btm-nav, #page2 #btm-nav{
+        padding: 4vh 2vh;
+    }
+    #home #btm-nav img, #page2 #btm-nav img{
+        width: 20vw;
+    }
+    #home #btm-nav-w{
+        padding: 4vh 4vh;
+    }
+    #home #btm-nav-w img{
+        width: 20vw;
+    }
+
+    #pinkbox{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #pinkbox #mid h5{
+        font-size: 3vw;
+    }
+    #pinkbox #mid h6{
+        font-size: 3vw;
+    }
+    #pinkbox #btm1 h5{
+        font-size: 6vw;
+    }
+    
+    #pinkbox #btm1 h6{
+        font-size: 3vw;
+    }
+    #pinkbox #btm2 h5{
+        font-size: 6vw;
+    }
+    
+    #pinkbox #btm2 h6{
+        font-size: 3vw;
+    }
+
+    #overlay>h1#gl {
+        font-weight: 500;
+        font-size: 12vw;
+        padding-bottom: 10%;
+    }
+    #overlay>h1#pf {
+        font-weight: 500;
+        font-size: 12vw;
+        padding-bottom: 10%;
+        left: 55%;
+    }
+
+    #pinkball{
+        width: 2vw;
+        height: 2vw;
+    }
+
+    #home #circle {
+        width: 120vw;
+        height: 120vw;
+    }
+
+    #btm img:nth-child(1){
+        transform: translate(-50%, -50%) scale(2.5);
+    }
+    #btm img:nth-child(2){
+        transform: translate(-50%, -50%) scale(2);
+    }
+    #btm img:nth-child(3){
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    #btm img:nth-child(4){
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    #home #smcircle{
+        width: 75vw;
+        height: 75vw;
+    }
+
+    #nav-w-btm{
+        display: none;
+    }
+
+    #sbtm>h1{
+        font-size: 5vw;
+        width: 90vw;
+        padding-bottom: 7vh;
+    }
+    
+}
